@@ -1,4 +1,5 @@
-import 'package:faker/faker.dart';
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 import '../shape.dart';
@@ -20,12 +21,12 @@ class Circle extends Shape {
   @override
   void randomiseProperties() {
     color = Color.fromRGBO(
-      random.integer(255),
-      random.integer(255),
-      random.integer(255),
+      Random().nextInt(256),
+      Random().nextInt(256),
+      Random().nextInt(256),
       1.0,
     );
-    radius = random.integer(50, min: 25).toDouble();
+    radius = Random().nextInt(51) + 25.toDouble();
   }
 
   @override

@@ -1,10 +1,11 @@
+
 import 'package:flutter/material.dart';
 
 const lightBackgroundColor = Color(0xFFECECEC);
 
 final lightTheme = ThemeData.from(
   colorScheme: const ColorScheme.light(
-    background: lightBackgroundColor,
+    surface: lightBackgroundColor,
     primary: Colors.grey,
   ),
 ).copyWith(
